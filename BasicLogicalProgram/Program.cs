@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Bassic Logical Program");
-            Console.WriteLine("1:Flip coin\n2:Leap Year\n3:Power of two\n4:Harmonics");
+            Console.WriteLine("1:Flip coin\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Find Quotient");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +24,10 @@
                 case 4:
                     Harmonics harmonics = new Harmonics();
                     harmonics.HarmonicsSeries();
+                    break;
+                case 5:
+                    FindQuotient findQuotient = new FindQuotient();
+                    findQuotient.FindQuotients();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
