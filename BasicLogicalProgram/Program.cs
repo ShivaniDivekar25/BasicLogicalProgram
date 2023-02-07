@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Bassic Logical Program");
-            Console.WriteLine("1:Flip coin\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Find Quotient\n6:Swapping Numbers");
+            Console.WriteLine("1:Flip coin\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Find Quotient\n6:Swapping Numbers\n7:Even Odd Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -32,6 +32,10 @@
                 case 6:
                     SwappingNumbers swapingNumbers = new SwappingNumbers();
                     swapingNumbers.SwappingTwoNumbers();
+                    break;
+                case 7:
+                    EvenOrOdd evenOrOdd = new EvenOrOdd();
+                    evenOrOdd.FindEvenOrOdd();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
