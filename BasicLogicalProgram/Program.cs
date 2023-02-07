@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Bassic Logical Program");
-            Console.WriteLine("1:Flip coin\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Find Quotient\n6:Swapping Numbers\n7:Even Odd Numbers\n8:Consonant Vowel\n9:Largest Number");
+            Console.WriteLine("1:Flip coin\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Find Quotient\n6:Swapping Numbers\n7:Even Odd Numbers\n8:Consonant Vowel\n9:Largest Number\n10:Factors of Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -44,6 +44,10 @@
                 case 9:
                     LargestNumber largestNumber = new LargestNumber();
                     largestNumber.LargestOfThreeNumber();
+                    break;
+                case 10:
+                    Factors factors = new Factors();
+                    factors.FactorsNumber();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
